@@ -5,10 +5,10 @@ export const fetchAPI = async (
 ): Promise<AxiosResponse> => {
   return new Promise((resolve, reject) => {
     axios({
-      baseURL: process.env.NEXT_PUBLIC_API_URL,
+      baseURL: 'https://api-bootcamp.do.dibimbing.id/api/v1/',
       headers: {
         'Content-Type': 'application/json',
-        apiKey: process.env.NEXT_PUBLIC_API_KEY ?? '',
+        apiKey: 'w05KkI9AWhKxzvPFtXotUva-',
       },
       ...options,
     })

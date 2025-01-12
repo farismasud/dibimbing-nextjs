@@ -12,19 +12,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={`${styles.page}`}>
-        <h1>product list</h1>
-        <ul>
-          <li>
-            <Link href="/products/bag">Bag</Link>
-          </li>
-          <li>
-            <Link href="/products/tshirt">Tshirt</Link>
-          </li>
-          <li>
-            <Link href="/products/shoes">Shoes</Link>
-          </li>
-        </ul>
+      <div className={`${styles.page} bg-gradient-to-r from-[#ffd7d7] to-[#ffb6b9] flex flex-col items-center justify-center h-screen`}>
+        <h1 className="text-6xl font-bold text-center text-[#ff69b4]">Product List</h1>
+        <Link href="/products/food">
+          <button className="bg-[#ff69b4] hover:bg-[#ff99cc] text-white font-bold py-2 px-4 rounded-full mt-4">
+            Lihat Produk
+          </button>
+        </Link>
       </div>
     </Authorization>
   );
